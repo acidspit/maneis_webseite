@@ -1,0 +1,37 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+title: Startseite
+description: Willkommen auf meiner Seite
+keywords: Aquarel, Malerei, Würzburg
+---
+<div class="vc_row wpb_row vc_row-fluid">
+	<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div class="woocommerce columns-4">
+					<ul class="products columns-4">
+						{% for slide in site.data.homeSlider %}
+						<li class="product-category product">
+							<div class="product-category-inner">
+								<a href="{{ slide.link }}">
+									<div class="cat_thumnail">
+										<img src="{{ slide.img }}"></div>
+										<a href="{{ slide.link }}">
+											<div class="title-cat" style="background-image:url({{ slide.img }})">
+												<h3>
+													{{ slide.title }}			</h3>
+											</div>
+										</a>
+									</a>
+								</a>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
