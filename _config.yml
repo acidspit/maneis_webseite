@@ -22,7 +22,7 @@ title: Maneis
 email: info@maneis.de
 description: >- # this means to ignore newlines until "baseurl:"
   Aqarell Malerei
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/maneis_webseite" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  
