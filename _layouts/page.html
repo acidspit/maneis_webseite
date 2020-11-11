@@ -1,0 +1,30 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			{% include head.html %}
+		</head>
+		<body class="page-template-default page page-id-16 wp-embed-responsive theme-theretailer woocommerce-no-js wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
+			<div class="site-content">
+				{% include header.html %}
+				<div id="global_wrapper" class="full-content">
+					<div class="global_content_wrapper page_default ">
+						<header class="entry-header">
+							<h1 class="entry-title">{{ page.title }}</h1>
+						</header>
+						<article id="post-12" class="post-12 page type-page status-publish hentry">
+							<div class="entry-content">
+								<div class="content_wrapper">
+									{{ content }}
+								</div>
+							</div>
+						</article>
+						<!-- #post-12 -->
+						<div class="clr"/>
+						<div class="clear"/>
+					</div>
+					{% include footer.html %}
+				</div>
+			</div>
+			{% include foot.html %}
+		</body>
+	</html>

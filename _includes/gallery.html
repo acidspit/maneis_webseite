@@ -1,0 +1,33 @@
+<div class="container_12">
+	<div class="grid_12">
+		<div class="listing_products_no_sidebar">
+			<div class="woocommerce-notices-wrapper"/>
+			<ul class="products columns-4">
+				{% for img in site.data.images %}
+				{% for gal in img.galleries %}
+				{% if gal == page.gallery %}
+				<li class="product_item product type-product status-publish first instock product_cat-metamorphosis product_cat-mixed-media product_cat-painting product_cat-watercolor has-post-thumbnail taxable shipping-taxable product-type-simple">
+					<a href="/assets/images/{{ img.link-full }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+						<div class="product_item_inner">
+							<div class="image_container">
+								<a class="image_container-thumbnail" href="/assets/images/{{ img.link-full }}">
+									<img width="300" height="300" src="/assets/images/{{ img.link-thumbnail }}" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="/assets/images/{{ img.link-base }}-300x300.jpg 300w, /assets/images/{{ img.link-base }}-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px"/>
+								</a>
+								<div class="clr"/>
+								<div class="product_button"></a>
+								<a href="/assets/images/{{ img.link-full }}" data-quantity="{{ img.quantaty }}" class="button product_type_simple" data-product_id="387" data-product_sku="" aria-label="Lesen Sie mehr über &#8222;{{ img.title }}&#8220;" rel="nofollow">Weiterlesen</a>
+							</div>
+						</div>
+						<!-- Show only the first category-->
+						<h3 class="product-title">
+							<a href="/assets/images/{{ img.link-full }}">{{ img.title }}</h3>
+						</div>
+						<!--.product_item_inner-->
+					</li>
+					{% endif %}
+					{% endfor %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>

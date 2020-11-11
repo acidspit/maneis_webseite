@@ -1,0 +1,31 @@
+- title: Home
+  link: /
+  
+  
+- title: Konzept
+  link: /konzept
+  submenu:
+    - title: Metamorphosis
+      link: /konzept/metamorphosis
+      
+    - title: SufiArt
+      link: /konzept/sufiart
+      
+    - title: Landschaften
+      link: /konzept/landschaften
+      
+    - title: Figurative
+      link: /konzept/figurative
+    
+  
+- title: Künstler
+  link: /kuenstler
+  
+- title: Video
+  link: /video
+  
+- title: Event
+  link: /event
+  
+- title: Kontakt
+  link: /kontakt

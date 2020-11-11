@@ -1,0 +1,65 @@
+<header class="gbtr_header_wrapper default_header">
+	<div class="content_header">
+		<div class="mobile_menu_wrapper">
+			<ul>
+				<li class="c-offcanvas-content-wrap hamburger_menu_button">
+					<a id="triggerButtonLeft" href="/#offCanvasLeft" class="js-offcanvas-trigger tools_button" data-offcanvas-trigger="offCanvasLeft">
+						<span class="hamburger_menu_icon"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="gbtr_menu_wrapper_default">
+			<div class="menus_wrapper menus_wrapper_shopping_bag_mobile_style menus_wrapper_no_secondary_menu">
+				<div class="gbtr_first_menu">
+					<nav class="main-navigation first-navigation" role="navigation">
+						<ul class="sf-menu">
+							{% for nav in site.data.mainMenu %}
+							{% if nav.submenu != null %}
+							<li class="concept menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ">
+								<a>{{ nav.title }}</a>
+								<ul class="sub-menu">
+									{% for sub in nav.submenu %}
+									<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ">
+										<a href="{{ sub.link }}">{{ sub.title }}</a>
+									</li>
+									{% endfor %}
+								</ul>
+							</li>
+							{% else %}
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-privacy-policy">
+								<a href="{{ nav.link }}">{{ nav.title }}</a>
+							</li>
+							{% endif %}
+							{% endfor %}
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="search-form">
+				<div id="wrap">
+					<form autocomplete="off" action="/" autocomplete="on">
+						<input autocomplete="false" id="search" name="s" type="text" placeholder="Search...">
+							<input id="search_submit" value="Rechercher" type="submit">
+								<input type="hidden" name="post_type" value="product">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="gbtr_logo_wrapper_default">
+						<a href="/" class="gbtr_logo">
+							<img src="/assets/images/logo_maneis.png" alt="logo"/>
+						</a>
+					</div>
+					<div class="mobile_tools">
+						<ul>
+							<li class="c-offcanvas-content-wrap search_button">
+								<a id="triggerButtonTop" href="/#offCanvasTop" class="js-offcanvas-trigger tools_button" data-offcanvas-trigger="offCanvasTop">
+									<span class="search_icon"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			
