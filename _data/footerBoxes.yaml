@@ -5,7 +5,7 @@ box1:
   content: >-
     <p>
       <a href="tel:0115155216339">
-      <img class="alignnone size-full wp-image-187" src="{{ /assets/images/call-svg.png | prepend: site.baseurl }}" alt="" width="15" height="15" data-wp-editing="1"/>  +49(01)</a>17630157982
+      <img class="alignnone size-full wp-image-187" src="/assets/images/call-svg.png" alt="" width="15" height="15" data-wp-editing="1"/>  +49(01)</a>17630157982
     </p>
     <p>
       <a id="phone" href="tel:0115155216339"/>
@@ -14,7 +14,7 @@ box1:
     </p>
     <p></br></p>
     <p>
-      <a href="{{ /impressum-datenschutz | prepend: site.baseurl }}">Impressum &amp; Datenschutz</a>
+      <a href="/impressum-datenschutz}}">Impressum &amp; Datenschutz</a>
     </p>
   
 box2:
@@ -23,12 +23,12 @@ box2:
     <ul class="slides-wrapper">
     <li class="slide-social_network">
     <a target="_blank" href="https://www.facebook.com/Maneis-M-Tehrani-158635760856556/" rel="noopener noreferrer">
-      <img src="{{ /assets/images/facebook.png | prepend: site.baseurl }}"/>
+      <img src="/assets/images/facebook.png"/>
     </a>
     </li>
     <li class="slide-social_network">
     <a target="_blank" href="https://www.instagram.com/maneisart/" rel="noopener noreferrer">
-    <img src="{{ /assets/images/instagram.png | prepend: site.baseurl }}"/>
+    <img src="/assets/images/instagram.png"/>
     </a>
     </li>
     </ul>
