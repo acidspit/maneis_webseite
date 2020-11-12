@@ -15,7 +15,7 @@ keywords: Aquarel, Malerei, Würzburg
 						{% for slide in site.data.homeSlider %}
 						<li class="product-category product">
 							<div class="product-category-inner">
-								<a href="{{ slide.link }}">
+								<a href="{{ slide.link | prepend: site.baseurl }}">
 									<div class="cat_thumnail">
 										<img src="{{ slide.img | prepend: site.baseurl }}"></div>
 										<a href="{{ slide.link | prepend: site.baseurl }}">
