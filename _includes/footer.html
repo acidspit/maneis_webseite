@@ -8,7 +8,7 @@
 							<ul id="menu-menu-footer" class="menu">
 								{% for nav in site.data.footerMenu %}
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-privacy-policy current-menu-item page_item page-item-12 current_page_item menu-item-60">
-									<a href="{{ nav.link }}" aria-current="page">{{ nav.title }}</a>
+									<a href="{{ nav.link | relative_url }}" aria-current="page">{{ nav.title }}</a>
 								</li>
 								{% endfor %}
 							</ul>
