@@ -1,12 +1,11 @@
-<div class="container_12">
-	<div class="grid_12">
-		<div class="listing_products_no_sidebar">
-			<div class="woocommerce-notices-wrapper"/>
-			<ul class="products columns-4">
+<div class="global_content_wrapper">
+    <div class="content_contact_wrapper" style="margin-bottom:100px; ">
+        <div class="entry-title" style="text-align:center;">
+			<ul >
 				{% for img in site.data.images %}
 				{% for gal in img.galleries %}
 				{% if gal == page.gallery %}
-				<li class="product_item product type-product status-publish first instock product_cat-metamorphosis product_cat-mixed-media product_cat-painting product_cat-watercolor has-post-thumbnail taxable shipping-taxable product-type-simple">
+				<li >
 					<a href="/assets/images/{{ img.link-full }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 						<img width="300" height="300" src="/assets/images/{{ img.link-full }}" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt=""/>
 					</a>
