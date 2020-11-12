@@ -21,14 +21,14 @@
 								<ul class="sub-menu">
 									{% for sub in nav.submenu %}
 									<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ">
-										<a href="{{ sub.link | relative_url }}">{{ sub.title }}</a>
+										<a href="{{ sub.link | prepend: site.baseurl }}">{{ sub.title }}</a>
 									</li>
 									{% endfor %}
 								</ul>
 							</li>
 							{% else %}
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-privacy-policy">
-								<a href="{{ nav.link | relative_url }}">{{ nav.title }}</a>
+								<a href="{{ nav.link | prepend: site.baseurl }}">{{ nav.title }}</a>
 							</li>
 							{% endif %}
 							{% endfor %}
@@ -48,7 +48,7 @@
 					</div>
 					<div class="gbtr_logo_wrapper_default">
 						<a href="/" class="gbtr_logo">
-							<img src="{{ assets/images/logo_maneis.png | relative_url }}" alt="logo"/>
+							<img src="{{ assets/images/logo_maneis.png | prepend: site.baseurl }}" alt="logo"/>
 						</a>
 					</div>
 					<div class="mobile_tools">
