@@ -3,36 +3,36 @@
 
 
 - title: Konzept
-  link: /konzept
+  link: konzept
   submenu:
     - title: Metamorphosis
-      link: /konzept/metamorphosis
+      link: konzept/metamorphosis
 
     - title: SufiArt
-      link: /konzept/sufiart
+      link: konzept/sufiart
 
     - title: Landschaften
-      link: /konzept/landschaften
+      link: konzept/landschaften
 
     - title: Figurative
-      link: /konzept/figurative
+      link: konzept/figurative
 
 
 - title: Künstler
-  link: /kuenstler
+  link: kuenstler
 
 - title: Video
-  link: /video
+  link: video
 
 - title: Event
-  link: /event
+  link: event
 
 - title: Kontakt
-  link: /kontakt
+  link: kontakt
 
 - title: Kalender
-  link: /kalender
+  link: kalender
   submenu:
     - title: Kalender 2021
-      link: /kalender/kalender2021
+      link: kalender/kalender2021
       
